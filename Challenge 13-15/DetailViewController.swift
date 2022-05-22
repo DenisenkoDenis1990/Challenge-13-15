@@ -40,28 +40,28 @@ class DetailViewController: UITableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Info")
             
             cell?.textLabel?.text = country.capital
-            cell?.detailTextLabel?.text = "Capital:"
+            cell?.detailTextLabel?.text = "CAPITAL:"
             return cell!
         }
         else if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Info2")
             
             cell?.textLabel?.text = (country.population)
-            cell?.detailTextLabel?.text = "Popupation:"
+            cell?.detailTextLabel?.text = "POPULATION:"
             return cell!
         }
         else if indexPath.row == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Info3")
             
             cell?.textLabel?.text = country.currencyCode
-            cell?.detailTextLabel?.text = "Currency:"
+            cell?.detailTextLabel?.text = "CURRENCY:"
             return cell!
         }
         else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Info4")
             
             cell?.textLabel?.text = country.continentName
-            cell?.detailTextLabel?.text = "Continent:"
+            cell?.detailTextLabel?.text = "CONTINENT:"
             return cell!
         }
 
